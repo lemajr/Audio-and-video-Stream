@@ -1,16 +1,9 @@
-import Image from 'next/image';
+import { PulseLoader } from "react-spinners";
 
-const Loader = () => {
-  return (
-    <div className="flex-center h-screen w-full">
-      <Image
-        src="/icons/loading-circle.svg"
-        alt="Loading..."
-        width={50}
-        height={50}
-      />
-    </div>
-  );
-};
+const Loader = () => (
+  <div className="size-full h-[70dvh] flex items-center justify-center">
+    <PulseLoader color="#FFFFFF" />
+  </div>
+);
 
 export default Loader;
