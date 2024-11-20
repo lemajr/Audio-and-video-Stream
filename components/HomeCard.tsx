@@ -14,11 +14,11 @@ interface HomeCardProps {
 
 const HomeCard = ({ className, img, title, description, handleClick }: HomeCardProps) => {
   return (
-    <section className='hover:translate-y-1 hover:border-4 rounded-[18px]'>
+    <section className='transition-transform hover:scale-105  rounded-[18px]'>
 
       <div
         className={cn(
-          'bg-orange-1 px-4 py-6 flex flex-col justify-between w-full xl:max-w-[350px] min-h-[260px] rounded-[14px] cursor-pointer ',
+          'bg-orange-1 px-4 py-6 flex flex-col justify-between w-full xl:max-w-[280px] hover:border-4 min-h-[260px] rounded-[14px] cursor-pointer ',
           className
         )}
         onClick={handleClick}

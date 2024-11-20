@@ -29,7 +29,7 @@ const Sidebar = () => {
                   <Link
                     href={item.route}
                     className={cn(
-                      'flex gap-4 items-center p-2 rounded-lg justify-center hover:translate-x-1',
+                      'flex gap-4 items-center p-2 rounded-lg justify-center  transition-transform hover:scale-125 hover:border border-blue-1',
                       {
                         'border border-blue-1': isActive,
                       }
